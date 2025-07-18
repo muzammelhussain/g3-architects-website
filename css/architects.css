@@ -5,7 +5,7 @@
 .work-sans-common {
   font-family: "Work Sans", sans-serif;
   font-optical-sizing: auto;
-  font-weight: bold;
+  font-weight: 400;
   font-style: normal;
   margin: 0 0 ;
 }
@@ -22,6 +22,7 @@
 }
 .dark-3 {
     color: #727272;
+    font-size: 16px;
     
 }
 
@@ -36,7 +37,7 @@
 }
 
 /* header section styles */
-header {
+header, footer{
     background-color: rgba(255, 144, 14, 0.1);
     padding-bottom: 32px;
    
@@ -116,6 +117,98 @@ main {
 }
 
 
+/* features section related styles */
+.features {
+    display: flex;
+    margin-top: 64px;
+    gap: 100px;
+}
+
+.features-section-title {
+    border-left: solid 5px #FF900E;
+    padding-left: 16px;
+}
+
+.feature-card {
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
+    margin-bottom: 20px;
+}
+
+.feature-card .feature-title{
+    font-weight: 600;
+    font-size: 1.25rem;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+#experience-badge{
+    padding: 45px 42px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-left: -100px;
+    margin-top: -100px;
+}
+
+#experience-year{
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.featured-architecd img {
+    width: 100%;
+}
+
+
+/* Facts section */
+
+.facts-container {
+    display: flex;
+    gap: 24px;
+    flex-wrap:1;
+
+}
+
+.fact-card {
+    padding: 16px 25px;
+    text-align: center;
+    border: solid 3px #FF900E;
+    height: 240px;
+    width: 240px;
+    border-radius: 8px;
+}
+
+.fact-card img {
+    margin-top: 48px;
+}
+
+
+/* sponsors section */
+
+.sponsor-info {
+    max-width: 540px;
+    margin: 50px auto;
+    text-align: center;
+}
+.sponsor-companies {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 48px;
+}
+.sponsor-companies img {
+    filter: grayscale(100%);
+}
+
+footer {
+    height: 200px;
+}
+footer p {
+    text-align: center;
+    padding: 48px;
+    margin-top: 100px;
+}
+
 /* responsive media query */
 @media screen and (max-width: 576px) {
     
@@ -124,7 +217,7 @@ main {
         gap: 20px;
     }
 
-    .team-feature, .nav {
+    .team-feature,.features, .nav, .facts-container {
         flex-direction: column;
     }
 
@@ -134,5 +227,20 @@ main {
 
     .feature-content{
         margin-left: 24px;
+    }
+    #experience-badge {
+        margin-top: 10px;
+        margin-left: 5px;
+    }
+
+    .fact-card {
+        margin: 0 auto;
+    }
+    .sponsor-companies {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+   .sponsor-companies img {
+    margin: 0 auto;
     }
 }
