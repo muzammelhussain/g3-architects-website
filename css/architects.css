@@ -1,0 +1,138 @@
+/* common styles */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+.work-sans-common {
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+  margin: 0 0 ;
+}
+
+.dark-1 {
+    color: #131313;
+    
+}
+
+.dark-2 {
+    color: #424242;
+    font-weight: 1rem;
+    font-size: medium;
+}
+.dark-3 {
+    color: #727272;
+    
+}
+
+.primary-btn {
+    background-color:#FF900E ;
+    color: white;
+    padding: 20px 25px;
+    font-size: 1.25rem;
+    font-weight: 600;
+    border-radius: 5px;
+    border: none;
+}
+
+/* header section styles */
+header {
+    background-color: rgba(255, 144, 14, 0.1);
+    padding-bottom: 32px;
+   
+}
+
+.header {
+     max-width: 1440px;
+    margin: 0 auto;
+
+}
+
+/* nav styles */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.nav ul {
+    display: flex;
+}
+
+.nav li {
+    list-style: none;
+    margin-left: 24px;
+}
+
+.nav li a {
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* banner section */
+.banner-content {
+    max-width: 850px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.banner-title {
+    font-weight: 700;
+    font-size: 4rem;
+}
+
+.banner-img {
+    width: 100%;
+}
+
+/* Team features related styles */
+
+main {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.team-feature {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 84px;
+}
+
+.team-img {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 24px;
+}
+
+.feature-content {
+    margin-left: 130px;
+    max-width: 530px;
+}
+
+#s-3 {
+    color: #FF900E;
+}
+
+
+/* responsive media query */
+@media screen and (max-width: 576px) {
+    
+     .nav ul{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .team-feature, .nav {
+        flex-direction: column;
+    }
+
+    .team-img {
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .feature-content{
+        margin-left: 24px;
+    }
+}
